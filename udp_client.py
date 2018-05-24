@@ -14,9 +14,9 @@ stego_message = str.encode('STEGO')
 data = 'string'
 length = 8 + len(data)
 
-send_byte(0) # start transmission
+send_byte(-1) # start transmission
 
 for stego_byte in bytearray(stego_message):
     send_byte(stego_byte)
 
-send_byte(0) # stop transmission
+send_byte(-1) # stop transmission
