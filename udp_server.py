@@ -20,7 +20,7 @@ while (True):
     if port == trash_port:
         continue
 
-    if port == base_port:
+    if port == base_port - 1:
         if len(stego_message):
             print(stego_message)
         stego_message = bytearray()
